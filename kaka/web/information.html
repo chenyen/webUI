@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>信息填写</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../module/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<body>
+    <div class="addinfobox">
+        <form class="layui-form" action="">
+            <div class="backbox common">
+                <a href="javascript:;">
+                    <img src="../images/back_icon.png" alt="">
+                    <span>返回</span>
+                </a>
+                <div class="ti">信息填写</div>
+                <div class="info">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="formbox">
+                <div id="" class="bginfo"></div>
+                <div id="" class="libox">
+                    <div class="li">
+                        <div class="ti">姓名:</div>
+                        <div class="detail">
+                            <input type="text" class="" name="username" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">婚否:</div>
+                        <div class="detail">
+                            <input type="radio" name="mar" value="已婚" title="已婚">
+                            <input type="radio" name="mar" value="未婚" title="未婚" checked>
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">学历:</div>
+                        <div class="detail">
+                            <div class="layui-inline">
+                                <div class="layui-input-inline">
+                                    <select name="education">
+                                        <option value=""></option>
+                                        <option value="0" selected="">中专</option>
+                                        <option value="1">大专</option>
+                                        <option value="2">本科</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">户籍地址:</div>
+                        <div class="detail">
+                            <input type="text" name="address" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">手机号码:</div>
+                        <div class="detail">
+                            <input type="text" name="phone" lay-verify="required|phone" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">身份证号:</div>
+                        <div class="detail">
+                            <input type="text" name="carNumber" lay-verify="required|identity" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">发证机关:</div>
+                        <div class="detail">
+                            <input type="text" name="organ" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">身份证有效期:</div>
+                        <div class="detail">
+                            <div class="layui-inline">
+                                <div class="layui-input-inline">
+                                    <input type="text" name="date" id="date" lay-verify="required|date" class="layui-input" placeholder="yyyy-MM-dd">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">QQ邮箱:</div>
+                        <div class="detail">
+                            <input type="text" name="qq" lay-verify="required|email" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">姓名:</div>
+                        <div class="detail">
+                            <input type="text" name="otname" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">直系亲属:</div>
+                        <div class="detail">
+                            <input type="text" name="kinsfolk" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">关系:</div>
+                        <div class="detail">
+                            <input type="text" name="relation" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">手机号码:</div>
+                        <div class="detail">
+                            <input type="text" name="otphone" lay-verify="required|phone" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">朋友:</div>
+                        <div class="detail">
+                            <input type="text" name="firend" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">关系:</div>
+                        <div class="detail">
+                            <input type="text" name="frelation" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">手机号码:</div>
+                        <div class="detail">
+                            <input type="text" name="fphone" lay-verify="required|phone" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">单位名称:</div>
+                        <div class="detail">
+                            <input type="text" name="unit" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">公司地址:</div>
+                        <div class="detail">
+                            <input type="text" name="comaddress" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">公司电话:</div>
+                        <div class="detail">
+                            <input type="text" name="comphone" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">家庭电话:</div>
+                        <div class="detail">
+                            <input type="text" name="homenum" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="ti">家庭地址:</div>
+                        <div class="detail">
+                            <input type="text" name="homeaddress" lay-verify="required" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btnbox">
+                <button class="btn" lay-submit="" lay-filter="subbtn">提交</button>
+            </div>
+        </form>
+    </div>
+    <script src="../module/layui/layui.js" charset="utf-8"></script>
+    <script>
+    layui.use(['form', 'laydate'], function() {
+        var form = layui.form,
+            layer = layui.layer,
+            laydate = layui.laydate;
+
+        //日期
+        laydate.render({
+            elem: '#date'
+        });
+        laydate.render({
+            elem: '#date1'
+        });
+
+        //监听提交
+        form.on('submit(subbtn)', function(data) {
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            })
+            return false;
+        });
+
+
+    });
+    </script>
+</body>
+
+</html>

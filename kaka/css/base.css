@@ -1,0 +1,930 @@
+@charset "UTF-8";
+
+/**
+*
+* @authors C
+* @date    2017-11-14
+* @version 1.0
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-size: 14px;
+}
+
+input,button {
+    border: 0;
+    outline: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/** public **/
+.width100 {
+	width: 100%;
+}
+
+.ov-hidden {
+	overflow: hidden;
+}
+
+.backcolor {
+	background: #f5f5f9;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.c-red {
+	color: red;
+}
+
+.backbox {
+	font-size: 14px;
+	background: #0949eb;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+}
+
+.backbox a {
+	color: #fff;
+	position: absolute;
+	display: inline-block;
+}
+
+.backbox a img {
+	width: 7px;
+	margin: -2px 0 0 10px;
+}
+
+.backbox .ti {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.backbox .info {
+	position: absolute;
+	right: 10px;
+}
+
+.backbox .info span {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+/** 个人后台 **/
+.backbox {
+	height: 130px;
+	position: absolute;
+    width: 100%;
+    z-index: -3;
+}
+
+.backbox.common {
+	height: 44px;
+	position: initial;
+    width: 100%;
+    z-index: -3;
+}
+
+.backper .user_li {
+	overflow: hidden;
+	margin-top: 70px;
+}
+
+.backper .user_li .bg_user {
+	position: absolute;
+    left: 0;
+    z-index: -1;
+    height: 122px;
+}
+
+.backper .user_li .userbox {
+	overflow: hidden;
+	padding: 20px 7% 0;
+	height: 122px;
+}
+
+.backper .user_li .userbox .photo {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.backper .user_li .userbox .userti {
+	margin: 10px 0 5px;
+}
+
+.backper .user_li .userbox .userto {
+	width: 10px;
+	margin-top: 30px;
+}
+
+.backper .user_li .userbox .userinfo {
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.backper .user_li .userbox .userinfo .partner {
+	width: 49%;
+	text-align: center;
+}
+
+.backper .user_li .userbox .userinfo .income {
+	width: 49%;
+	text-align: center;
+}
+
+.backper .fun_li {
+	text-align: center;
+	overflow: hidden;
+}
+
+.backper .fun_li .bg_lis {
+	position: absolute;
+    left: 0;
+    z-index: -1;
+    height: 120px;
+}
+
+.backper .fun_li li {
+	display: inline-table;
+	width: 20%;
+}
+
+.backper .fun_li li img {
+	width: 30px;
+}
+
+.backper .fun_li li p {
+	font-size: 12px;
+}
+
+.backper .bu_li {
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	overflow: hidden;
+	margin-top: 10px;
+	background: #fff;
+}
+
+.backper .bu_li li {
+	margin-left: 20px;
+	overflow: hidden;
+}
+
+.backper .bu_li li .liti {
+	border-top: 1px solid #d8d8d8;
+	overflow: hidden;
+	padding: 10px;
+	margin-top: 0px;
+}
+
+.backper .bu_li li:nth-child(1) .liti {
+	border-top: none;
+}
+
+.backper .bu_li li .ti_icon {
+	width: 26px;
+	margin-top: 10px;
+}
+
+.backper .bu_li li .ti {
+	font-size: 16px;
+}
+
+.backper .bu_li li .to_icon {
+	width: 10px;
+}
+
+/** 银行快贷 **/
+.bankl_li li {
+	box-shadow: 1px 2px 5px #888888;
+    width: 90%;
+    border-radius: 7px;
+    height: 109px;
+    overflow: hidden;
+    margin: 20px auto 0;
+    background: #fff;
+}
+
+.bankl_li .tibox {
+	overflow: hidden;
+	padding: 10px 0;
+}
+
+.bankl_li .tibox .tagimg {
+	width: 60px;
+    margin-left: 15px;
+}
+
+.bankl_li .tibox .ti {
+	font-size: 22px;
+    margin-left: 10px;
+    line-height: 60px;
+}
+
+.bankl_li .tibox .to {
+	width: 12px;
+    margin: 17px 15px 0 0;
+}
+
+.bankl_li .info {
+	color: #fff;
+	background: linear-gradient(to bottom, #094aed, #227dfa);
+	overflow: hidden;
+	line-height: 30px;
+	font-size: 12px;
+	padding: 0 15px;
+}
+
+/** 我要办卡 **/
+.crecard .bankli {
+	background: #fff;
+	overflow: hidden;
+	margin-top: 15px;
+}
+
+.crecard .bankli li {
+	width: 50%;
+	float: left;
+	border-bottom: 1px solid #d8d8d8;
+	padding: 15px 0 15px 10px;
+}
+
+.crecard .bankli li:nth-child(2n-1) {
+	border-right: 1px solid #d8d8d8;
+}
+
+.crecard .bankli li img {
+	width: 50px;
+}
+
+.banktip {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #d8d8d8;
+	text-align: center;
+	padding: 10px 0;
+	height: 60px;
+	background: #fff;
+	margin-bottom: 0;
+}
+
+.banktip li {
+	width: 50%;
+	float: left;
+}
+
+.banktip li img {
+	width: 26px;
+}
+
+/** 信用卡代还 **/
+.generbox {
+	background: #fff;
+	margin-top: 10px;
+	overflow: hidden;
+	border-top: 1px solid #d8d8d8;
+}
+
+.generbox li {
+	padding: 15px 0;
+	overflow: hidden;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.generbox li img {
+	width: 60px;
+	margin: 6px 0 0 10px;
+	position: absolute;
+}
+
+.generbox li .infobox {
+	width: 100%;
+	padding:0 10px 0 80px;
+}
+
+.generbox li .infobox .ti {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.generbox li .infobox .info {
+	padding: 5px 0;
+}
+
+.generbox li .infobox span {
+	color: red;
+}
+
+/** 购买会员 **/
+.buymen .tip {
+	height: 60px;
+	line-height: 60px;
+	overflow: hidden;
+	padding: 0 20px;
+	background: #fff;
+}
+
+.buymen .tip .num {
+	color: #ff0000;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.buymen .tip .count {
+	color: #666666;
+}
+
+.buymen .detailbox {
+	margin-top: 10px;
+	background: #fff;
+	overflow: hidden;
+	border-top: 1px solid #d8d8d8;
+}
+
+.buymen .detailbox li {
+	overflow: hidden;
+	padding: 10px 0;
+	min-height: 100px;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.buymen .detailbox .buyicon {
+	position: absolute;
+	border-radius: 50%;
+	margin-left: 10px;
+	width: 60px;
+}
+
+.buymen .detailbox .buyinfo {
+	width: 100%;
+	padding: 0 10px 0 80px;
+}
+
+.buymen .detailbox .buyinfo .ti {
+	font-weight: bold;
+	margin: 0;
+}
+
+.buymen .detailbox .buyinfo .info {
+	margin: 0;
+	min-height: 40px;
+}
+
+.buymen .detailbox .buyinfo .date {
+	text-align: right;
+	color: #dddddd;
+}
+
+.buymen .buybtn {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	color: #fff;
+	text-align: center;
+	height: 44px;
+	line-height: 44px;
+	background: #0949eb;
+}
+
+/** 我的钱包 **/
+.mwallet .detailbox {
+	color: #fff;
+	display: inline-table;
+	width: 100%;
+	margin-top: 70px;
+}
+
+.mwallet .detailbox img {
+	position: absolute;
+	z-index: -1;
+}
+
+.mwallet .detailbox .walletbox {
+	padding: 5%;
+}
+
+.mwallet .detailbox .walletbox .wtop {
+	display: inline-table;
+	height: 50%;
+	width: 100%;
+}
+
+.mwallet .detailbox .walletbox .wbottom {
+	display: inline-table;
+	height: 50%;
+}
+
+.mwallet .detailbox .walletbox p {
+	margin: 0;
+}
+
+.mwallet .detailbox .walletbox .allnum {
+	font-size: 26px;
+}
+
+.mwallet .detailbox .walletbox .allti {
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.mwallet .detailbox .walletbox .otli {
+	width: 48%;
+}
+
+.mwallet .detailbox .walletbox .borderli {
+	font-size: 32px;
+}
+
+.mwallet .detailbox .walletbox .bli {
+	width: 48%;
+}
+
+.mwallet .liti {
+	background: #fff;
+	border-top: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+	overflow: hidden;
+}
+
+.mwallet .liti .check {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	line-height: 44px;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.mwallet .liti .check.on {
+	border-bottom: 2px solid blue;
+}
+
+.mwallet .lis {
+	background: #fff;
+}
+
+.mwallet .lis li {
+	width: 100%;
+	border-bottom: 1px solid #d8d8d8;
+	padding: 15px 30px;
+	overflow: hidden;
+}
+
+.mwallet .lis li .info {
+	margin: 0;
+}
+
+.mwallet .lis li .date {
+	color: #dddddd;
+	margin: 0;
+}
+
+.mwallet .lis li .num {
+	font-size: 24px;
+	line-height: 40px;
+}
+
+/** 精准借贷 **/
+.credit .bg_lis {
+	position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.credit .tibox {
+	text-align: center;
+    overflow: hidden;
+}
+
+.credit .tibox ul {
+	margin: 0;
+}
+
+.credit .tibox ul li {
+	display: inline-table;
+    width: 20%;
+    margin-top: 8px;
+}
+
+.credit .tibox ul li img {
+	width: 30px;
+}
+
+.credit .tibox ul li p {
+    font-size: 12px;
+    margin: 5px 0 0 0;
+}
+
+.credit .slebox {
+	background: #fff;
+	overflow: hidden;
+	text-align: center;
+}
+
+.credit .slebox ul li {
+	width: 30%;
+	display: inline-table;
+	border: 1px solid #d8d8d8;
+}
+
+.credit .slebox ul li .iconli {
+	width: 40px;
+}
+
+.credit .slebox ul li .ti {
+	font-size: 14px;
+}
+
+.credit .slebox ul li .num {
+	font-size: 12px;
+}
+
+.credit .slebox ul li .count {
+	font-size: 12px;
+}
+
+/** 最新口子 **/
+.newopen .slebox .bgnew {
+	position: absolute;
+	z-index: -1;
+}
+
+.newopen .slebox .sleti {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	padding-top: 10px;
+}
+
+.newopen .slebox .sleti .link {
+	color: #fff;
+    position: absolute;
+	top: 4px;
+}
+
+.newopen .slebox .sleti .link img {
+	width: 7px;
+    margin: -2px 0 0 10px;
+}
+
+.newopen .slebox .sleti .sle {
+	width: 212px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	background: #d8d8d8;
+	border-radius: 22px;
+}
+
+.newopen .slebox .sleti .sle .sleicon {
+	width: 20px;
+	margin-left: 12px;
+}
+
+.newopen .slebox .sleti .sle .sletxt {
+	background: #d8d8d8;
+	width:130px;
+}
+
+.newopen .slebox .sleti .sle .slebtn {
+	background: #d8d8d8;
+	color: #0949eb;
+}
+
+.newopen .slebox .sleti .info {
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+
+.newopen .slebox .sleti .info span {
+	display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.newopen .tibox {
+	width: 100%;
+	border-top: 1px solid #d8d8d8;
+	overflow: hidden;
+}
+
+.newopen .tibox div {
+	border-bottom: 1px solid #d8d8d8;
+	width: 33.33%;
+	float: left;
+	height: 44px;
+	line-height: 44px;
+	background: #fff;
+	text-align: center;
+}
+
+.newopen .tibox div.on {
+	border-bottom: 2px solid #9793f1;
+}
+
+.newopen .lisbox {
+	background: #fff;
+	overflow: hidden;
+	margin-top: 10px;
+	border-top: 1px solid #d8d8d8;
+}
+
+.newopen .lisbox li {
+	border-bottom: 1px solid #d8d8d8;
+	overflow: hidden;
+	padding: 15px 10px;
+}
+
+.newopen .lisbox li .liimg {
+	width: 80px;
+	position: absolute;
+	left: 10px;
+}
+
+.newopen .lisbox li .liinfo {
+	padding-left: 90px;
+	width: 100%
+}
+
+.newopen .lisbox li .ti {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.newopen .lisbox li .info {
+	font-size: 14px;
+	min-height: 40px;
+	color: #666666;
+}
+
+.newopen .lisbox li .type {
+	color: #666666;
+}
+
+.newopen .lisbox li .date {
+	color: #666666;
+}
+
+/** 信息填写 **/
+.addinfobox {
+	background: linear-gradient(to bottom, #9cc6fe, #3b64ee);
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+}
+
+.addinfobox .backbox {
+	background: none;
+}
+
+.addinfobox .formbox {
+	padding: 15px;
+}
+
+.addinfobox .formbox .bginfo {
+	position: absolute;
+	background: #fff;
+}
+
+.addinfobox .formbox .libox {
+	background: url(../images/bg_info.png);
+	padding: 20px 10px;
+	border-radius: 10px;
+}
+
+.addinfobox .formbox .libox .li {
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 14px;
+}
+
+.addinfobox .formbox .libox .li .ti {
+	position: absolute;
+	width: 103px;
+	text-align: right;
+	color: #fff;
+}
+
+.addinfobox .formbox .libox .li .detail {
+	margin-left: 110px;
+}
+
+.addinfobox .formbox .libox .li .detail .layui-form-radio {
+	margin: 5px 0 0;
+}
+
+.addinfobox .formbox .libox .li .detail .layui-inline {
+	width: 100%;
+}
+
+.addinfobox .formbox .libox .li .detail .layui-inline .layui-input-inline {
+	width: 100%;
+}
+
+.addinfobox .formbox .libox .li .detail span {
+	color: #fff;
+}
+
+.addinfobox .formbox .libox .li .detail input {
+	background: none;
+	border-bottom: 1px solid #fff;
+	font-size: 14px;
+	color: #fff;
+	width: 100%;
+}
+
+.addinfobox .formbox .libox .li .detail input::-webkit-input-placeholder {
+	color: #bfd6fe;
+}
+
+.addinfobox .btnbox {
+	padding: 15px;
+	text-align: center;
+}
+
+.addinfobox .btnbox .btn {
+	background: linear-gradient(to bottom, #6690fc, #517dfe);
+	height: 40px;
+	width: 100%;
+	margin: 30px 0 100px;
+	color: #fff;
+	border-radius: 5px;
+}
+
+/** 修改信息 **/
+.addinfobox .formbox .delibox {
+	background: url(../images/bg_info.png);
+	border-radius: 5px;
+	color: #fff;
+}
+
+.addinfobox .formbox .delibox .li {
+	height: 46px;
+	line-height: 46px;
+	border-top: 1px solid #fff;
+}
+
+.addinfobox .formbox .delibox .li:nth-child(1) {
+	border-top: none;
+}
+
+.addinfobox .formbox .delibox .ti {
+	position: absolute;
+	width: 103px;
+	text-align: left;
+	color: #fff;
+	padding-left: 5px;
+}
+
+.addinfobox .formbox .delibox .detail {
+	text-align: right;
+	padding-right: 5px;
+}
+
+.addinfobox .formbox .delibox .detail input {
+	text-align: right;
+	color: #fff;
+	background: none;
+}
+
+/** 技术大全 **/
+.newopen .iconbox {
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	background: #fff;
+}
+
+.newopen .iconbox li {
+	display: inline-block;
+	width: 90px;
+	margin: 5px;
+	background: #e6e6e6;
+	padding: 5px;
+	border-radius: 5px;
+	color: #666;
+}
+
+.newopen .iconbox li.on {
+	background: #0949eb;
+	color: #fff;
+}
+
+.newopen .tecbox {
+	background: #fff;
+	width: 100%;
+	overflow: hidden;
+}
+
+.newopen .tecbox li {
+	width: 100%;
+	border-bottom: 1px solid #d8d8d8;
+	padding: 10px 0;
+}
+
+.newopen .tecbox li .liimg {
+	width: 90px;
+	position: absolute;
+	left: 10px;
+}
+
+.newopen .tecbox li .liinfo {
+	width: 100%;
+	padding: 0 10px 0 110px;
+}
+
+.newopen .tecbox li .liinfo .ti {
+	font-weight: bold;
+}
+
+.newopen .tecbox li .liinfo .info {
+	color: #666666;
+	min-height: 40px;
+}
+
+.newopen .tecbox li .liinfo .link {
+	text-align: right;
+	margin-top: 10px;
+}
+
+.newopen .tecbox li .liinfo .link a {
+	color: #0949eb;
+}
+
+.newopen .tecbox li .tip {
+	color: #666666;
+	margin-left: 10px;
+	padding-top: 10px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.newopen .tecbox li .tip span {
+	color: #0949eb;
+}
+
+/** 文章详情 **/
+.ac {
+	padding: 20px 30px 50px;
+}
+
+.ac .ti {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.ac .time {
+	color: #d8d8d8;
+	margin: 20px 0;
+}
+
+.ac .info {
+	line-height: 24px;
+}
+
+.ac .info img {
+	margin: 10px 0;
+}
+
+/** 代理赚钱 **/
+.ag .txtbox {
+	width: 100%;
+	background: url(../images/ag_bg.png);
+	background-size: 100% 100%;
+	color: #fff;
+	margin-top: -5px;
+}
+
+.ag .txtbox p {
+	padding: 2% 6%;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.ag .txtbox span {
+	color: red;
+}
